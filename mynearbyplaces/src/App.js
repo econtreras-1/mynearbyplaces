@@ -1,18 +1,21 @@
 import {HashRouter, Switch, Route} from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import React, { useEffect, useState } from "react";
+import './App.css';
+
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Add from './Components/Add';
-import AddReview from './Components/Add_Review';
+import Add_Review from './Components/Add_Review';
 import Delete from './Components/Delete';
 import Review from './Components/Review';
 import Edit from './Components/Edit';
 import NavigationBar from './Components/NavigationBar';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import './App.css';
-import { Container } from 'react-bootstrap';
 import business_type from './Components/data'
-import React, { useEffect, useState } from "react";
+
+
 
 
 function App() {
@@ -48,8 +51,8 @@ function App() {
           <Route path="/review" component={Review}>
             <Review />
           </Route>
-          <Route path="/addreview" component={AddReview}>
-            <AddReview />
+          <Route path="/add_review" component={Add_Review}>
+            <Add_Review />
           </Route>
         </Switch>
         <Footer />
