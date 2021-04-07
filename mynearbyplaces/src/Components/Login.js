@@ -17,6 +17,11 @@ function Login(props) {
     let onEmailChange = (event) => {
         setEmail(event.target.value)
     }
+
+    let onPasswordChange = (event) => {
+        setPassword(event.target.value)
+    }
+
     return (
         <Row><Col>
             <Form onSubmit={onLoginSubmitted}>
@@ -30,11 +35,9 @@ function Login(props) {
                 </Form.Group>
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control type="password" placeholder="Password" onChange={onPasswordChange}/>
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
+                <Button variant="primary" type="submit">Submit</Button>
             </Form>
         </Col></Row>
     );
