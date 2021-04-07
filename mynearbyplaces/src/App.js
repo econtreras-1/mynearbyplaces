@@ -11,13 +11,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
 import { Container } from 'react-bootstrap';
-import business from './components/data'
+import business_type from './components/data'
 import React, { useEffect, useState } from "react";
 
 
 function App() {
   const [username, setUsername] = useState(localStorage.getItem('username') || '');
-  const [list, setList] = useState(business)
+  const [list, setList] = useState(business_type)
   let onLoggedIn = (email) => {
     localStorage.setItem('username', email);
     setUsername(email);

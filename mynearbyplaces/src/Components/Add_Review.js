@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import business_type from "./data";
 import user_reviews from "./Reviews";
 
-function AddReview(props) {
+function Add_Review(props) {
     const history = useHistory();
     const [reviewsList, setList] = useState(user_reviews)
     const [business, setBusiness] = useState('');
