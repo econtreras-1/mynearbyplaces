@@ -2,7 +2,7 @@ import {HashRouter, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import Login from './components/Login';
 import Add from './components/Add';
-import AddReview from './components/AddReview';
+import AddReview from './components/Add_Review';
 import Delete from './components/Delete';
 import Review from './components/Review';
 import Edit from './components/Edit';
