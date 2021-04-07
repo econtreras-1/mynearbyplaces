@@ -10,7 +10,7 @@ function Home() {
 
         <Card>
             <div class="text-center">{business_type.name}</div>
-            <img class="card-img-top" src={business_type.image} alt="Business Image" />
+            <img class="card-img-top" src={business_type.image} alt="Business" />
             <div class="text-center">{business_type.address}</div>
             <Link to={
                 {
