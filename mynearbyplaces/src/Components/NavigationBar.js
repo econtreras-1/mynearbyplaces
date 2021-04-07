@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 function NavigationBar(props) {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="warning" expand="lg">
             <Navbar.Brand>Local Restaurant Reviews</Navbar.Brand>
 
             <Navbar.Collapse id="basic-navbar-nav">
