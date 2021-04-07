@@ -26,16 +26,14 @@ function Login(props) {
         <Row><Col>
             <Form onSubmit={onLoginSubmitted}>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Type In Email" onChange={onEmailChange} />
+                    <Form.Label>Email Address: </Form.Label>
+                    <Form.Control type="email" placeholder="Type Email" onChange={onEmailChange} />
                     <br></br>
-                    <Form.Text className="text-muted">
-                        On your way to find amazing reviews!
-                    </Form.Text>
+                    <Form.Text className="text-muted">Login to Review!</Form.Text>
                 </Form.Group>
                 <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" onChange={onPasswordChange}/>
+                    <Form.Label>Password:</Form.Label>
+                    <Form.Control type="password" placeholder="Type Password" onChange={onPasswordChange}/>
                 </Form.Group>
                 <Button variant="primary" type="submit">Submit</Button>
             </Form>

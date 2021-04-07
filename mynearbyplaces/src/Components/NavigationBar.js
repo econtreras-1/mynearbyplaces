@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import React, { useEffect, useState } from "react";
@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 function NavigationBar(props) {
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand>Welcome Our Review Page!</Navbar.Brand>
+            <Navbar.Brand>Local Restaurant Reviews</Navbar.Brand>
 
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
