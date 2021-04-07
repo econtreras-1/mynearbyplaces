@@ -9,12 +9,17 @@ function Add(props) {
     const history = useHistory();
     const [businessList, setList] = useState(business_type)
     const [name, setName] = useState('');
+    const [business, setBusiness] = useState('');
     const [image, setImage] = useState('');
     const [address, setAddress] = useState('');
 
 
     let onNameChange = (event) => {
         setName(event.target.value)
+    }
+
+    let onBusinessChange = (event) => {
+        setBusiness(event.target.value)
     }
 
     let onAddressChange = (event) => {
@@ -25,7 +30,7 @@ function Add(props) {
         setImage(event.target.value)
     }
     function handleAdd() {
-        business_type.push({ id: business_type.length, name, image, address });
+        business_type.push({ id: business_type.length, name, business, image, address });
         history.push('/');
     }
 
@@ -35,13 +40,12 @@ function Add(props) {
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Business Information</Form.Label>
                     <Form.Control type="input" id="name" placeholder="Enter Name" onChange={onNameChange} />
+                    <Form.Control type="input" id="business" placeholder="Enter Business Type" onChange={onBusinessChange} />
                     <Form.Control type="input" id="address" placeholder="Enter Address" onChange={onAddressChange} />
                     <Form.Control type="input" id="image" placeholder="Enter Image URL Hyperlink" onChange={onImageChange} />
                     <br></br>
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
+                <Button variant="primary" type="submit">Submit</Button>
             </Form>
         </Col></Row>
     );

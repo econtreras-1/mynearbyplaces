@@ -3,8 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useHistory } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
-import business_type from "./data";
 import { Link, useLocation } from "react-router-dom";
+import business_type from "./data";
 
 
 function Delete(props) {
@@ -28,7 +28,7 @@ function Delete(props) {
                     <Form.Label>Would you like to delete?</Form.Label>
                     <br></br>
                 </Form.Group>
-                <Button variant="primary" type="submit">Delete business_type</Button>
+                <Button variant="primary" type="submit">Delete Business</Button>
             </Form>
         </Col></Row>
     );

@@ -9,18 +9,22 @@ import user_reviews from "./Reviews";
 function AddReview(props) {
     const history = useHistory();
     const [reviewsList, setList] = useState(user_reviews)
+    const [business, setBusiness] = useState('');
     const [name, setName] = useState('');
+    const [date, setDate] = useState('');
     const [review, setReview] = useState('');
-    const [business_type, setBusiness] = useState('');
     const [rating, setRating] = useState('');
 
+    let onBusinessChange = (event) => {
+        setBusiness(event.target.value)
+    }
 
     let onNameChange = (event) => {
         setName(event.target.value)
     }
 
-    let onBusinessChange = (event) => {
-        setBusiness(event.target.value)
+    let onDateChange = (event) => {
+        setDate(event.target.value)
     }
 
     let onReviewChange = (event) => {
@@ -31,7 +35,7 @@ function AddReview(props) {
     }
 
     function handleAdd() {
-        user_reviews.push({ id: user_reviews.length, name, business_type, review, rating });
+        user_reviews.push({ id: user_reviews.length, business, name, date, review, rating });
         history.push('/');
     }
     return (
@@ -39,8 +43,9 @@ function AddReview(props) {
             <Form onSubmit={handleAdd}>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Review Information</Form.Label>
+                    <Form.Control type="input" id="business" placeholder="Business Name: " onChange={onBusinessChange} />
                     <Form.Control type="input" id="name" placeholder="Full Name: " onChange={onNameChange} />
-                    <Form.Control type="input" id="business_type" placeholder="Business Name: " onChange={onBusinessChange} />
+                    <Form.Control type="input" id="date" placeholder="Enter Date: " onChange={onDateChange} />
                     <Form.Control type="input" id="review" placeholder="Submit Review/Experience: " onChange={onReviewChange} />
                     <Form.Control type="input" id="rating" placeholder="Rating 1 of 5" onChange={onRatingChange} />
                     <br></br>

@@ -11,11 +11,16 @@ function Edit(props) {
     let location = useLocation();
     const [businessList, setList] = useState(business_type)
     const [name, setName] = useState('');
+    const [business, setBusiness] = useState('');
     const [image, setImage] = useState('');
     const [address, setAddress] = useState('');
 
     let onNameChange = (event) => {
         setName(event.target.value)
+    }
+
+    let onBusinessChange = (event) => {
+        setBusiness(event.target.value)
     }
 
     let onAddressChange = (event) => {
@@ -29,6 +34,7 @@ function Edit(props) {
         for (var i = 0; i < business_type.length; i++) {
             if (location.state.id === business_type[i].id) {
                 business_type[i].name = name;
+                business_type[i].business = business;
                 business_type[i].address = address;
                 business_type[i].image = image;
             }
@@ -39,15 +45,14 @@ function Edit(props) {
         <Row><Col>
             <Form onSubmit={handleEdit}>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Business_type Info</Form.Label>
+                    <Form.Label>Business Information</Form.Label>
                     <Form.Control type="input" id="name" placeholder="Enter Name" onChange={onNameChange} />
+                    <Form.Control type="input" id="business" placeholder="Enter Business Type" onChange={onBusinessChange} />
                     <Form.Control type="input" id="address" placeholder="Enter Address" onChange={onAddressChange} />
                     <Form.Control type="input" id="image" placeholder="Enter image link" onChange={onImageChange} />
                     <br></br>
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
+                <Button variant="primary" type="submit">Submit</Button>
             </Form>
         </Col></Row>
     );
