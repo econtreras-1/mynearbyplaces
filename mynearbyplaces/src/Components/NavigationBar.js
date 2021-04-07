@@ -11,6 +11,9 @@ function NavigationBar(props) {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link><Link to="/">Home</Link></Nav.Link>
+                    <Nav.Link><Link to="/add">Add Location</Link></Nav.Link>
+                    <Nav.Link><Link to="/review">Reviews</Link></Nav.Link>
+                    <Nav.Link><Link to="/addreview">Submit Review</Link></Nav.Link>
                     <br />
                     <Nav.Link>
                         {
@@ -21,9 +24,6 @@ function NavigationBar(props) {
                         }
 
                     </Nav.Link>
-                    <Nav.Link><Link to="/add">Add</Link></Nav.Link>
-                    <Nav.Link><Link to="/review">Reviews</Link></Nav.Link>
-                    <Nav.Link><Link to="/addreview">Add Reviews</Link></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
