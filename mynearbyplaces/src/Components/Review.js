@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import business_type from './data'
 import user_reviews from './Reviews'
+
 function Review() {
 
     const cardsArray = user_reviews.map(user_reviews => (
@@ -14,7 +15,6 @@ function Review() {
         </Card>
     )
     );
-
 
     return (
         <div>
