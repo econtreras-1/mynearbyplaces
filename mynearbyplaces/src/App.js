@@ -6,7 +6,7 @@ import './App.css';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Add from './Components/Add';
-import Add_Review from './Components/Add_Review';
+import AddReview from './Components/AddReview';
 import Delete from './Components/Delete';
 import Review from './Components/Review';
 import Edit from './Components/Edit';
@@ -51,7 +51,7 @@ function App() {
           <Route path="/review" component={Review}>
             <Review />
           </Route>
-          <Route path="/add_review" component={Add_Review}>
+          <Route path="/addreview" component={AddReview}>
             <Add_Review />
           </Route>
         </Switch>

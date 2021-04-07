@@ -56,4 +56,4 @@ function Add_Review(props) {
     );
 }
 
-export default Add_Review;
+export default AddReview;
