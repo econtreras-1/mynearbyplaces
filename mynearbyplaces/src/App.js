@@ -1,17 +1,17 @@
 import {HashRouter, Switch, Route} from 'react-router-dom';
-import Home from './components/Home';
-import Login from './components/Login';
-import Add from './components/Add';
-import AddReview from './components/Add_Review';
-import Delete from './components/Delete';
-import Review from './components/Review';
-import Edit from './components/Edit';
-import NavigationBar from './components/NavigationBar';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Home from './Components/Home';
+import Login from './Components/Login';
+import Add from './Components/Add';
+import AddReview from './Components/Add_Review';
+import Delete from './Components/Delete';
+import Review from './Components/Review';
+import Edit from './Components/Edit';
+import NavigationBar from './Components/NavigationBar';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import './App.css';
 import { Container } from 'react-bootstrap';
-import business_type from './components/data'
+import business_type from './Components/data'
 import React, { useEffect, useState } from "react";
 
 
