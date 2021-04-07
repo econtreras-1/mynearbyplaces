@@ -52,7 +52,7 @@ function App() {
             <Review />
           </Route>
           <Route path="/addreview" component={AddReview}>
-            <Add_Review />
+            <AddReview />
           </Route>
         </Switch>
         <Footer />
