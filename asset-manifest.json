@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/mynearbyplaces/static/css/main.8af500cd.chunk.css",
-    "main.js": "/mynearbyplaces/static/js/main.cec12fb0.chunk.js",
-    "main.js.map": "/mynearbyplaces/static/js/main.cec12fb0.chunk.js.map",
-    "runtime-main.js": "/mynearbyplaces/static/js/runtime-main.85e8425f.js",
-    "runtime-main.js.map": "/mynearbyplaces/static/js/runtime-main.85e8425f.js.map",
-    "static/css/2.ef9168ec.chunk.css": "/mynearbyplaces/static/css/2.ef9168ec.chunk.css",
-    "static/js/2.c6389400.chunk.js": "/mynearbyplaces/static/js/2.c6389400.chunk.js",
-    "static/js/2.c6389400.chunk.js.map": "/mynearbyplaces/static/js/2.c6389400.chunk.js.map",
-    "static/js/3.602eed2b.chunk.js": "/mynearbyplaces/static/js/3.602eed2b.chunk.js",
-    "static/js/3.602eed2b.chunk.js.map": "/mynearbyplaces/static/js/3.602eed2b.chunk.js.map",
+    "main.css": "/mynearbyplaces/static/css/main.d88f8f27.chunk.css",
+    "main.js": "/mynearbyplaces/static/js/main.271cf8b3.chunk.js",
+    "main.js.map": "/mynearbyplaces/static/js/main.271cf8b3.chunk.js.map",
+    "runtime-main.js": "/mynearbyplaces/static/js/runtime-main.b0dfb567.js",
+    "runtime-main.js.map": "/mynearbyplaces/static/js/runtime-main.b0dfb567.js.map",
+    "static/js/2.a79a4abd.chunk.js": "/mynearbyplaces/static/js/2.a79a4abd.chunk.js",
+    "static/js/2.a79a4abd.chunk.js.map": "/mynearbyplaces/static/js/2.a79a4abd.chunk.js.map",
+    "static/js/3.7da54c6c.chunk.js": "/mynearbyplaces/static/js/3.7da54c6c.chunk.js",
+    "static/js/3.7da54c6c.chunk.js.map": "/mynearbyplaces/static/js/3.7da54c6c.chunk.js.map",
     "index.html": "/mynearbyplaces/index.html",
-    "static/css/2.ef9168ec.chunk.css.map": "/mynearbyplaces/static/css/2.ef9168ec.chunk.css.map",
-    "static/css/main.8af500cd.chunk.css.map": "/mynearbyplaces/static/css/main.8af500cd.chunk.css.map",
-    "static/js/2.c6389400.chunk.js.LICENSE.txt": "/mynearbyplaces/static/js/2.c6389400.chunk.js.LICENSE.txt"
+    "static/css/main.d88f8f27.chunk.css.map": "/mynearbyplaces/static/css/main.d88f8f27.chunk.css.map",
+    "static/js/2.a79a4abd.chunk.js.LICENSE.txt": "/mynearbyplaces/static/js/2.a79a4abd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.85e8425f.js",
-    "static/css/2.ef9168ec.chunk.css",
-    "static/js/2.c6389400.chunk.js",
-    "static/css/main.8af500cd.chunk.css",
-    "static/js/main.cec12fb0.chunk.js"
+    "static/js/runtime-main.b0dfb567.js",
+    "static/js/2.a79a4abd.chunk.js",
+    "static/css/main.d88f8f27.chunk.css",
+    "static/js/main.271cf8b3.chunk.js"
   ]
 }
