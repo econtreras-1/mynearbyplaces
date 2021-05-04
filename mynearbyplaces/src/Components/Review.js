@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import business from './data'
 import reviews from './reviews'
+import api from "../communication/api"
 
 function Review() {
     const cardsArray = reviews.map(reviews => (
