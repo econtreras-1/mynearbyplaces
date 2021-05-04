@@ -2,10 +2,19 @@ import { Card, CardGroup, CardDeck, CardColumns, ButtonGroup } from "react-boots
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import business from './data'
-
+import api from "../communication/api"
 
 
 function Home() {
+    const [places, setPlaces] = useState([]);
+    useEffect(() => {
+        if (places.length == 0) {
+            api.getPlaces()
+                .then(x => setPlaces(x))
+                .catch(e => console.log(e));
+        }
+    })
+
     const cardsArray = business.map(business => (
 
         <Card>
